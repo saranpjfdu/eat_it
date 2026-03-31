@@ -4,7 +4,9 @@ import lombok.Data;
 
 @Data
 public class DeliveryDTO {
-    private Long orderId;
-    private Long deliveryPersonId;
-    private String status; // ASSIGNED, PICKED, DELIVERED
+    private Long riderId;
+    private String status;
+    private Double lat;
+    private Double lng;
+    private String inputOtp; // Sent by rider when picking up from owner
 }
